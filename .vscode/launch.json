@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ValidAnagram",
+            "request": "launch",
+            "mainClass": "L2.Strings.ValidAnagram",
+            "projectName": "ItPrep_249109d1"
+        },
+        {
+            "type": "java",
+            "name": "mytemp",
+            "request": "launch",
+            "mainClass": "L2.Strings.mytemp",
+            "projectName": "ItPrep_249109d1"
+        },
+        {
+            "type": "java",
             "name": "LengthOfLastWord",
             "request": "launch",
             "mainClass": "L2.Strings.LengthOfLastWord",

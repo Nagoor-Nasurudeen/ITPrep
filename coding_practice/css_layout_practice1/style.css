@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: rgb(231, 231, 231);
+}
+.flex-container{
+    margin: 25px;
+    background-color: rgb(231, 231, 231);
+    
+    display: flex;
+    
+    justify-content: center;
+    align-items: stretch;
+    border-radius: 35px;
+
+}
+
+.card{
+    flex-basis: 400px;
+    padding: 15px;
+    padding-left: 25px;
+    margin: 10px;
+    border-radius: 20px;
+    
+    position: relative;
+
+    background-color: white;
+    box-shadow: 5px 5px  20px rgba(83, 83, 83, 0.541);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+    gap: 5px;
+}
+
+.card2{
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    position-anchor: --card2-anchor;  /* refer inline css for anchor-name*/
+    width: anchor-size(width);
+    padding: 15px;
+
+    border-radius: 25px;
+    background-color: rgba(43, 43, 43, 0.699);
+}
+
+img{
+    border-radius: 25px;
+}
+
+#imgWithSave>button{
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+.statistics{
+    width: 100%;  /* since flex dir is column  */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    align-self: center;  /* since flex start is enabled */
+    padding: 10px;
+
+}
+.separator{
+    
+    flex: 0 0 4px;   /* separotor should not grow*/
+    background-color: rgb(199, 199, 199);
+    
+    height: 40px;
+    border-radius: 4px ;
+}
+
+
+button{
+    padding: 5px;
+    border-radius: 20px;
+    margin: 2px;
+}
+.getInTouch{
+    background-color: black;
+    color: white;   
+}
+.buttons{
+    align-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+.buttons>.getInTouch{
+    flex-basis: 90%;
+}
+
+.savebtn{  /* for card2 only ,for card1 refer inline css*/
+    background-color: rgba(70, 70, 70, 0.808);
+    color: white;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  
+.flex-container{
+    flex-wrap: wrap;
+}
+
+}

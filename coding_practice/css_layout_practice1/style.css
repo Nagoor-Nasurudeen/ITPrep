@@ -38,6 +38,8 @@ body{
 }
 
 .card2{
+    filter: blur(1px);
+    /* z-index: -1; */
     color: white;
     position: absolute;
     bottom: 0px;
@@ -46,7 +48,8 @@ body{
     padding: 15px;
 
     border-radius: 25px;
-    background-color: rgba(43, 43, 43, 0.699);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    
 }
 
 img{
